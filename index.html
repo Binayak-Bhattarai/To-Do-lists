@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+</head>
+<body>
+
+<div class="main">
+<h1> Welcome to <br>To-Do List !</h1> <br>
+<span>
+
+    <label for="Add Event">Add Your Tasks</label> <i class="ri-add-fill"  onclick="showtask()"></i>
+</span>
+
+<div class="add-task">
+    Event Name: <input type="text" id="event" placeholder="Eneter event name">
+    No.Of Task: <input type="number" id="num" placeholder="Enter number of task ">
+    <br>
+    <button id="submit" onclick="hidetask()">Submit</button>
+</div>
+
+<div class="box">
+  
+</div>
+
+<div id="last">
+    <h3 style="font-size: 10px; color: black;">Your To-do List:-</h3>
+    
+
+</div>
+
+
+</div>
+    <script src="index.js"></script>
+</body>
+</html>

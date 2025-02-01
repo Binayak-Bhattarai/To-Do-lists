@@ -1,0 +1,214 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main{
+    height: 98%;
+    width: 200px;
+    border-radius: 15px;
+    background-color: #1D1F21;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.25);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    color: white;
+    
+}
+.main span{
+    height: 30px;
+    width: 150px;
+    border: 2px solid white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+position: relative;
+padding: 5px;
+margin-top: 10px;
+}
+label{
+    font-size: 13px;
+}
+.ri-add-fill{
+    background-color: black;
+    margin-right: 5px;
+}
+
+.main h1{
+    font-size: 20px;
+    margin-top: 7px;
+}
+.add-task{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: white;
+    width: 180px;
+    height: 30%;
+    margin-top: 20px;
+    border-radius: 15px;
+}
+#submit{
+    height: 20px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.box{
+    overflow-y:  auto;
+    gap: 5px;
+    display: none;
+    flex-direction: column;
+    width: 180px;
+    height: 40%;
+    background-color: white;
+    margin-top: 15px;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px;
+    border-radius: 10px;
+}
+.box::-webkit-scrollbar {
+    display: none; 
+}
+#save{
+    height: 20px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#delete{
+    height: 20px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+    position: fixed;
+    bottom: 50px;
+}
+
+#last{
+    display: none;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    background-color: white;
+    width: 180px;
+    height: 25%;
+    margin-top: 20px;
+    border-radius: 15px;
+    padding: 5px;
+    overflow-y:  auto;
+    gap: 7px;
+    position: relative;
+}
+#last::-webkit-scrollbar {
+    display: none; 
+}
+
+#last span{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 10px;
+   
+}
+#result{
+    height: 30px;
+    width: 160px;
+    font-size: 10px;
+    background-color: rgb(211, 252, 27);
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    padding: 5px;
+    gap: 10px;
+}
+.ri-delete-bin-6-line{
+    color: red;
+    background-color: white;
+   
+}
+
+
+
+
+ @media (max-width:650px) {
+    .main{
+        width:98%
+    }
+    .main h1{
+        font-size: 30px;
+    }
+    .main span{
+        height: 45px;
+        width: 300px;
+    }
+    label{
+        font-size: 20px;
+    }
+    .ri-add-fill{
+        background-color: black;
+        margin-right: 5px;
+        height: 40px;
+        width: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #result{
+        height: 50px;
+        
+    }
+    .add-task{
+        width: 80%;
+        height:250px;
+    } 
+    
+    input{
+        width: 70%;
+        height: 40px;
+    }
+  button{
+    height: 40px;
+    width: 50%;
+  }
+  .box{
+    width: 80%;
+        height: 250px;
+  }
+  #save , #delete ,#submit{
+    width: 40%;
+    height: 30px;
+    margin-top: 10px;
+  }
+  #last{ 
+    font-size: larger;
+    padding: 15px;
+    width: 80%;
+        height: 250px;
+  }
+  #result{
+    width: 70%;
+    height: 40px;
+  }
+} 
